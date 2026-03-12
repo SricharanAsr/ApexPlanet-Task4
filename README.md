@@ -28,3 +28,36 @@ At ApexPlanet Software Pvt. Ltd., we are dedicated to driving innovation and exc
 
 ---
 *Developed as part of the ApexPlanet Internship Program.*
+
+## Getting Started
+
+### Prerequisites
+- Python 3.10+
+- `pip` (Python package installer)
+
+### Installation
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/SricharanAsr/ApexPlanet-Task4.git
+   ```
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+## Developer Guide
+
+### Running Analysis
+Execute the main statistical engine using:
+```bash
+python statistical_test.py
+```
+Outputs and logs will be displayed in the terminal.
+
+### Configuration
+Update `config.yaml` to modify data paths or age group ranges without changing the core logic.
+
+## Project Roadmap
+- [ ] Integration with real-time sales APIs.
+- [ ] Expanded hypothesis tests for product sub-categories.
+- [ ] React-based dashboard implementation.
