@@ -4,11 +4,284 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ApexPlanet - Data Storytelling & Validation</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #6366f1;
+            --secondary: #ec4899;
+            --bg: #0f172a;
+            --card-bg: #1e293b;
+            --text: #f8fafc;
+            --text-dim: #94a3b8;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            margin: 0;
+            overflow-x: hidden;
+            scroll-behavior: smooth;
+        }
+
+        .slide {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 2rem;
+            text-align: center;
+            box-sizing: border-box;
+            position: relative;
+        }
+
+        .gradient-bg {
+            background: linear-gradient(135deg, #1e1b4b 0%, #0f172a 100%);
+        }
+
+        h1 {
+            font-size: 4rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+            background: linear-gradient(to right, var(--primary), var(--secondary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        h2 {
+            font-size: 2.5rem;
+            font-weight: 600;
+            margin-bottom: 2rem;
+            color: var(--primary);
+        }
+
+        .subtitle {
+            font-size: 1.5rem;
+            color: var(--text-dim);
+            max-width: 800px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            width: 100%;
+            max-width: 1200px;
+        }
+
+        .card {
+            background: var(--card-bg);
+            padding: 2rem;
+            border-radius: 1rem;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: transform 0.3s ease, border-color 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            border-color: var(--primary);
+        }
+
+        .card h3 {
+            font-size: 1.5rem;
+            margin-top: 0;
+            color: var(--secondary);
+        }
+
+        .stat {
+            font-size: 3rem;
+            font-weight: 800;
+            color: var(--text);
+            margin: 1rem 0;
+        }
+
+        .label {
+            color: var(--text-dim);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            font-size: 0.9rem;
+        }
+
+        .nav-dots {
+            position: fixed;
+            right: 2rem;
+            top: 50%;
+            transform: translateY(-50%);
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            z-index: 100;
+        }
+
+        .dot {
+            width: 12px;
+            height: 12px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 50%;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .dot:hover, .dot.active {
+            background: var(--primary);
+        }
+
+        .cta-btn {
+            margin-top: 2rem;
+            padding: 1rem 2rem;
+            background: var(--primary);
+            color: white;
+            border-radius: 0.5rem;
+            text-decoration: none;
+            font-weight: 600;
+            transition: opacity 0.3s ease;
+        }
+
+        .cta-btn:hover {
+            opacity: 0.8;
+        }
+
+        /* Animations */
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s ease-out;
+        }
+
+        .reveal.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        @media (max-width: 768px) {
+            h1 { font-size: 2.5rem; }
+            h2 { font-size: 1.8rem; }
+            .grid { grid-template-columns: 1fr; }
+        }
+    </style>
 </head>
 <body>
-    <section id="slide1">
-        <h1>ApexPlanet</h1>
-        <p>Data Storytelling & Statistical Validation</p>
+
+    <div class="nav-dots">
+        <a href="#slide1" class="dot active"></a>
+        <a href="#slide2" class="dot"></a>
+        <a href="#slide3" class="dot"></a>
+        <a href="#slide4" class="dot"></a>
+        <a href="#slide5" class="dot"></a>
+    </div>
+
+    <!-- Slide 1: Welcome -->
+    <section id="slide1" class="slide gradient-bg">
+        <h1 class="reveal">ApexPlanet</h1>
+        <p class="subtitle reveal">Data Storytelling & Statistical Validation</p>
+        <p class="subtitle reveal" style="font-size: 1.1rem; margin-top: 2rem;">A Stakeholder Presentation by Sricharan</p>
     </section>
+
+    <!-- Slide 2: Foundation -->
+    <section id="slide2" class="slide">
+        <h2 class="reveal">Built on Integrity</h2>
+        <div class="grid reveal">
+            <div class="card">
+                <h3>Data Wrangling</h3>
+                <div class="stat">1,000+</div>
+                <div class="label">Cleaned Transactions</div>
+            </div>
+            <div class="card">
+                <h3>Automation</h3>
+                <div class="stat">Pipeline</div>
+                <div class="label">Handling Duplicates & Anomalies</div>
+            </div>
+            <div class="card">
+                <h3>Standardization</h3>
+                <div class="stat">Uniform</div>
+                <div class="label">Date & Category Formats</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Slide 3: Insights -->
+    <section id="slide3" class="slide gradient-bg">
+        <h2 class="reveal">Key Market Insights</h2>
+        <div class="grid reveal">
+            <div class="card">
+                <h3>Star Category</h3>
+                <div class="stat">$104K</div>
+                <div class="label">Electronics Revenue</div>
+            </div>
+            <div class="card">
+                <h3>Core Performance</h3>
+                <div class="stat">66.7%</div>
+                <div class="label">Average Conversion Rate</div>
+            </div>
+            <div class="card">
+                <h3>Loyalty</h3>
+                <div class="stat">50%</div>
+                <div class="label">Stable Retention Rate</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Slide 4: Statistical Validation -->
+    <section id="slide4" class="slide">
+        <h2 class="reveal">Statistical Validation</h2>
+        <p class="subtitle reveal">Is the 35-44 age group really higher spending?</p>
+        <div class="grid reveal" style="margin-top: 2rem;">
+            <div class="card">
+                <h3>35-44 AOV</h3>
+                <div class="stat">$443.12</div>
+                <div class="label">Mean Transaction</div>
+            </div>
+            <div class="card">
+                <h3>25-34 AOV</h3>
+                <div class="stat">$339.19</div>
+                <div class="label">Mean Transaction</div>
+            </div>
+            <div class="card">
+                <h3>P-Value</h3>
+                <div class="stat">0.0302</div>
+                <div class="label">Highly Significant Results</div>
+            </div>
+        </div>
+        <p class="reveal" style="margin-top: 2rem; font-style: italic; color: var(--text-dim);">"The $103 gap in spending power is statistically proven."</p>
+    </section>
+
+    <!-- Slide 5: Strategy -->
+    <section id="slide5" class="slide gradient-bg">
+        <h2 class="reveal">Future Roadmap</h2>
+        <div class="grid reveal">
+            <div class="card" style="border-left: 5px solid var(--primary);">
+                <h3>Capitalize</h3>
+                <p>Scale Electronics promotions for the 35-44 segment.</p>
+            </div>
+            <div class="card" style="border-left: 5px solid var(--secondary);">
+                <h3>Optimize</h3>
+                <p>Identify and replicate the 2025-07 cohort's 63% retention success.</p>
+            </div>
+            <div class="card" style="border-left: 5px solid #10b981;">
+                <h3>Bridge</h3>
+                <p>Nurture the 25-34 segment with high-value entry products.</p>
+            </div>
+        </div>
+        <a href="#" class="cta-btn reveal">Final Deliverable Ready</a>
+    </section>
+
+    <script>
+        // Reveal animation on scroll
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    // Update dots
+                    document.querySelectorAll('.dot').forEach(dot => dot.classList.remove('active'));
+                    const id = entry.target.id;
+                    document.querySelector(`a[href="#${id}"]`)?.classList.add('active');
+                }
+            });
+        }, { threshold: 0.3 });
+
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+        document.querySelectorAll('.slide').forEach(el => observer.observe(el));
+    </script>
 </body>
 </html>
