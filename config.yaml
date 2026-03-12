@@ -1,0 +1,7 @@
+data:
+  path: "d:\\sricharan-A\\documents\\Apex_Software_solutions\\T2\\sales_data.csv"
+
+analysis:
+  groups:
+    group_1: [35, 44]
+    group_2: [25, 34]
