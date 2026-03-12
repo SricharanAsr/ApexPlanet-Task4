@@ -23,7 +23,7 @@ A longitudinal cohort study showed that our customers aren't just one-time buyer
 To ensure our findings weren't just noise, we performed a T-test on our top-performing segments.
 - **Validation**: There is a **statistically significant $100+ gap** between the AOVs of the 35-44 segment and the 25-34 segment. This isn't just a trend; it's a proven spending behavior.
 
-## 3. Conclusions
+## 3. Conclusions & Recommendations
 - **Electronics is the Engine**: Revenue is dominated by high-cost tech items.
 - **Mature Customers have the Most "Muscle"**: The older demographic provides the highest immediate value.
 - **Retention is Healthier than Expected**: The stabilizing retention rate indicates a strong brand affinity.
