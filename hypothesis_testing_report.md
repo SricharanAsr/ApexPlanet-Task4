@@ -12,10 +12,16 @@ To validate the business intuition that more mature customer segments (Ages 35-4
 
 ## 3. Results
 | Metric | Age Group 35-44 | Age Group 25-34 |
-| :--- | :--- | :--- |
+| :--- | : :--- | :--- |
 | **Mean AOV** | **$443.12** | **$339.19** |
 | **Sample Size (n)** | 213 | 206 |
 | **Difference** | **+$103.94** | |
 
 - **P-Value**: **0.0302** (Significant at α=0.05)
 - **95% Confidence Interval**: ($10.00, $197.88)
+
+## 4. Business Conclusion
+The difference in spending is **statistically significant**. Customers in the 35-44 age bracket spend, on average, over $100 more per transaction than their younger counterparts. 
+
+> [!IMPORTANT]
+> This confirms that marketing efforts prioritized toward the 35-44 demographic will likely yield higher immediate ROI. However, the presence of a strong core (n=206) in the 25-34 bracket suggests a vital market for long-term growth.
