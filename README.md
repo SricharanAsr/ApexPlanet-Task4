@@ -5,7 +5,18 @@
 ![GitHub license](https://img.shields.io/github/license/SricharanAsr/ApexPlanet-Task4?style=for-the-badge)
 ![Python Version](https://img.shields.io/badge/python-3.10%2B-blue?style=for-the-badge&logo=python)
 
+![Project Status](https://img.shields.io/badge/status-complete-success?style=for-the-badge)
+
 ![About Us](about_us.png)
+
+## 📋 Table of Contents
+- [Overview](#-overview)
+- [Built With](#-built-with)
+- [Project Structure](#-project-structure)
+- [Getting Started](#-getting-started)
+- [Architecture](#-architecture)
+- [Contributing](#-contributing)
+- [License](#-license)
 
 ## 📊 Overview
 This repository contains the complete deliverables for **Task 4** of the ApexPlanet Data Analytics project. Our mission was to synthesize multi-phase analysis into a cohesive business narrative and validate key findings using rigorous statistical methods.
